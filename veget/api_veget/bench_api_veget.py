@@ -1,6 +1,6 @@
 import argparse
 
-from vegetLib.veget import VegET_B
+from vegetLib.bench_veget import VegET_B
 
 from vegetLib.log_logger import log_make_logger
 

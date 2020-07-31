@@ -444,6 +444,7 @@ class VegET_B:
 
         return RAIN, SWf, SNWpk, SWE, DDrain, SRf, etc, etasw, netet
     '''
+        return RAIN, SWf, SNWpk, SWE, DDrain, SRf, etc, etasw, netet
 
     def run_veg_et(self):
         print(

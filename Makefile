@@ -1,5 +1,5 @@
 publish:
-	git remote set-url origin git@github.com:skagone/cloud-veg-et.git
+	git remote set-url origin git@github.com:tonybutzer/cloud-veg-et.git
 	git config --global user.email tonybutzer@gmail.com
 	git config --global user.name tonybutzer
 	#git config --global user.email skagone@contractor.usgs.gov

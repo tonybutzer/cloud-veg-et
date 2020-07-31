@@ -52,7 +52,7 @@ class OptiMeister:
         
     
     def _cache_npy(self, warpfile, ary):
-        self.log.info('Cache this file {}'.format(warpfile))
+        self.log.info('Research Cache this file {}'.format(warpfile))
         cache_name = _make_npy_cache_name(warpfile, self.tile)
         _np_save_cloud(cache_name, ary)
         self.cache[warpfile]=cache_name
@@ -69,7 +69,7 @@ class OptiMeister:
         t0 = t_now()
         
         if self._is_in_cache(warpfile):
-            self.log.info('RETRIEVING NPY CACHE ITEM'.format(warpfile))
+            self.log.info('RESEARCH RETRIEVING NPY CACHE ITEM'.format(warpfile))
             data = self._return_cache_data(warpfile)
             return data
         else:    

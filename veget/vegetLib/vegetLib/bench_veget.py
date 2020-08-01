@@ -391,7 +391,7 @@ class VegET_B:
 
         # Call Raster Manager function to standardize all the input dataset.
         #dynamic_inpts = [self.ndvi, self.pet, self.ppt, self.tavg, self.tmin, self.tmax]
-        dynamic_inpts = [self.ndvi, ]
+        dynamic_inpts = [self.ndvi]
 
         # All the variables are now Numpy Arrays!
         #self.ndvi, self.pet, self.ppt, self.tavg, self.tmin, self.tmax = \

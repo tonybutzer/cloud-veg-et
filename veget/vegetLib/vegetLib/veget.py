@@ -422,8 +422,9 @@ class VegET:
         DDrainout = f'dd_{year}{DOY}.tif'
         SRfout = f'srf_{year}{DOY}.tif'
         if daily_mode:
-            self.rmanager.output_rasters(DDrain, self.outdir, outname=DDrainout)
-            self.rmanager.output_rasters(SRf, self.outdir, outname=SRfout)
+            #self.rmanager.output_rasters(DDrain, self.outdir, outname=DDrainout)
+            #self.rmanager.output_rasters(SRf, self.outdir, outname=SRfout)
+            pass
 
         # output eta and SWf
         etasw, SWf, etasw5, etc, netet = self._veg_et(k_factor, ndvi_factor, water_factor, bias_corr, alfa_factor, watermask,
@@ -436,8 +437,8 @@ class VegET:
 
         if daily_mode:
             self.rmanager.output_rasters(etasw, outdir, outname=etaswout)
-            self.rmanager.output_rasters(SWf, outdir, outname=SWfout)
-            self.rmanager.output_rasters(etasw5, outdir, outname=etasw5out)
+            #self.rmanager.output_rasters(SWf, outdir, outname=SWfout)
+            #self.rmanager.output_rasters(etasw5, outdir, outname=etasw5out)
             self.rmanager.output_rasters(etc, self.outdir, outname=etcout)
             self.rmanager.output_rasters(netet, self.outdir, outname=netetout)
 

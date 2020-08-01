@@ -89,10 +89,11 @@ class OptiMeister:
                             self.log.info("o_warp_one Completed {}".format(warpfile))
                             t_total = t_now() - t0
                             self.log.info("WARP - TIME - {} - {}".format(t_total, warpfile))
-                            t0 = t_now()
-                            self._cache_npy(warpfile,data)
-                            t_total = t_now() - t0
-                            self.log.info("Cache_Store - TIME - {} - {}".format(t_total, warpfile))
+                            if 'NDVI' in warpfile:
+                                t0 = t_now()
+                                self._cache_npy(warpfile,data)
+                                t_total = t_now() - t0
+                                self.log.info("Cache_Store - TIME - {} - {}".format(t_total, warpfile))
                         return data
                 except rasterio.errors.RasterioIOError:
                         print("Unexpected error:", sys.exc_info()[0])

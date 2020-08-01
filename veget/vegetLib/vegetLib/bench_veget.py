@@ -381,13 +381,13 @@ class VegET_B:
 
         #dynamic inputs to the model
         self.ndvi = self.pmanager.get_dynamic_data(today, self.ndvi_settings)
-'''
+        '''
         self.pet = self.pmanager.get_dynamic_data(today, self.pet_settings)
         self.ppt = self.pmanager.get_dynamic_data(today, self.precip_settings)
         self.tavg = self.pmanager.get_dynamic_data(today, self.tavg_settings)
         self.tmin = self.pmanager.get_dynamic_data(today, self.tmin_settings)
         self.tmax = self.pmanager.get_dynamic_data(today, self.tmax_settings)
-'''
+        '''
 
         # Call Raster Manager function to standardize all the input dataset.
         #dynamic_inpts = [self.ndvi, self.pet, self.ppt, self.tavg, self.tmin, self.tmax]
